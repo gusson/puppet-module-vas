@@ -137,6 +137,7 @@ describe 'vas' do
  group-update-mode = none
  root-update-mode = none
 
+#[vas_auth]
 })
       end
       it do
