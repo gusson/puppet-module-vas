@@ -26,7 +26,7 @@
  vascache-ipc-timeout = 15
 
 [pam_vas]
- prompt-vas-ad-pw = "Enter Windows password: "
+ prompt-vas-ad-pw = Enter Windows password: 
 <% if @vas_conf_pam_vas_prompt_ad_lockout_msg != 'UNSET' -%>
  prompt-ad-lockout-msg = "<%= @vas_conf_pam_vas_prompt_ad_lockout_msg %>"
 <% end -%>
@@ -72,7 +72,7 @@
  group-update-mode = none
  root-update-mode = none
 
-[vas_auth]
 <% if @vas_conf_vas_auth_uid_check_limit != 'UNSET' -%>
+[vas_auth]
  uid-check-limit = <%= @vas_conf_vas_auth_uid_check_limit %>
 <% end -%>

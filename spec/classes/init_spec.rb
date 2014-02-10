@@ -116,7 +116,7 @@ describe 'vas' do
  vascache-ipc-timeout = 15
 
 [pam_vas]
- prompt-vas-ad-pw = "Enter Windows password: "
+ prompt-vas-ad-pw = Enter Windows password: 
 
 [vasypd]
  search-base = ou=nismaps,dc=example,dc=com
@@ -137,7 +137,6 @@ describe 'vas' do
  group-update-mode = none
  root-update-mode = none
 
-[vas_auth]
 })
       end
       it do
@@ -241,7 +240,7 @@ describe 'vas' do
  vascache-ipc-timeout = 15
 
 [pam_vas]
- prompt-vas-ad-pw = "Enter Windows password: "
+ prompt-vas-ad-pw = Enter Windows password: 
  prompt-ad-lockout-msg = "Account is locked"
 
 [vasypd]
