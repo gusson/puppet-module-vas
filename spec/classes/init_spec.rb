@@ -117,7 +117,7 @@ describe 'vas' do
  auth-helper-timeout = 10
 
 [pam_vas]
- prompt-vas-ad-pw = "Enter Windows password: "
+ prompt-vas-ad-pw = Enter Windows password: 
 
 [vasypd]
  search-base = ou=nismaps,dc=example,dc=com
@@ -138,7 +138,7 @@ describe 'vas' do
  group-update-mode = none
  root-update-mode = none
 
-[vas_auth]
+#[vas_auth]
 })
       end
       it do
@@ -250,7 +250,7 @@ describe 'vas' do
  auth-helper-timeout = 120
 
 [pam_vas]
- prompt-vas-ad-pw = "Enter Windows password: "
+ prompt-vas-ad-pw = Enter Windows password: 
  prompt-ad-lockout-msg = "Account is locked"
 
 [vasypd]
